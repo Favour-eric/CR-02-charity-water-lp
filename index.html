@@ -4,9 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charity Water Landing Page</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
+    <!-- 
+      Note: The CSS below should be moved to styles.css for best practice.
+      It's included here for learning purposes.
+    -->
+    <style>
+      /* Set up the main body style */
+      body {
+        margin: 0;
+        font-family: 'Georgia', serif;
+        display: flex;
+        height: 100vh;
+      }
+      /* Style for the left panel */
+      .left-panel {
+        width: 50%;
+        background-color: #002f6c;
+        color: white;
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .left-panel h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .left-panel p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        max-width: 400px;
+      }
+      .donate-btn {
+        background-color: #FFC907;
+        color: black;
+        font-weight: bold;
+        padding: 12px 20px;
+        text-decoration: none;
+        display: inline-block;
+        width: fit-content;
+        border-radius: 5px;
+      }
+      /* Style for the right panel */
+      .right-panel {
+        width: 50%;
+        position: relative;
+      }
+      .right-panel img.main-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      /* Style for the logo box at the bottom */
+      .logo-box {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: white;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .logo-box img {
+        height: 24px;
+        margin-right: 10px;
+      }
+      .logo-box span {
+        font-size: 16px;
+        color: #333;
+      }
+    </style>
 </head>
 <body>
-    <!-- Add your HTML here -->
+
+  <!-- Left panel with heading, text, and button -->
+  <div class="left-panel">
+    <h1>Give Clean Water. See the Impact</h1>
+    <p>Help students around the world access clean water and see the change you make.</p>
+    <a href="#" class="donate-btn">Donate Now</a>
+  </div>
+
+  <!-- Right panel with main image and logo box -->
+  <div class="right-panel">
+    <!-- Main image showing a girl drinking clean water -->
+    <img src="images/girl-water.jpg" alt="Girl drinking clean water" class="main-image">
+    <div class="logo-box">
+      <!-- Charity: water icon -->
+      <img src="images/charity-water-icon.png" alt="charity: water icon">
+      <!-- cw_logo-2 image -->
+      <img src="images/cw_logo-2.png" alt="charity: water logo 2">
+      <!-- Extra image from the provided link -->
+      <img src="https://github.com/Favour-eric/First/blob/main/charitywater3.jpg?raw=true" alt="Charity Water 3">
+      <!-- You can add a label or text here if needed -->
+      <!-- <span><strong>Charity Water</strong></span> -->
+    </div>
+  </div>
 </body>
 </html>
